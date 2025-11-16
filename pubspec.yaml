@@ -1,0 +1,48 @@
+name: contact_map
+description: "A Flutter app for finding WhatsApp businesses"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Manejo de estado
+  provider: ^6.1.1
+
+  # Para llamadas API
+  http: ^1.1.0
+
+  # Programación funcional (Either, Failure)
+  dartz: ^0.10.1
+
+  # Comparación de objetos
+  equatable: ^2.0.5
+
+  # Obtener ubicación del dispositivo
+  location: ^5.0.0
+
+  # Manejar permisos (ubicación)
+  permission_handler: ^11.0.1
+
+  # Abrir URLs (WhatsApp, Mapas, etc.)
+  url_launcher: ^6.2.2
+
+  # Almacenamiento local simple
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Ya no necesitamos .env, pero dejamos assets si planeas usar imágenes
+  assets:
+    - assets/images/
+    - assets/icons/
